@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+         .grandParent{
+        background-color: red;
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent{
+        background-color: green;
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .child{
+        background-color: blue;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="grandParent">
+        gp
+        <div class="parent">
+            p
+            <div class="child">
+                c
+            </div>
+        </div>
+    </div>
+    <button id="btn">Click</button>
+    <script src="Eventbubbling.js"></script>
+</body>
+</html>
